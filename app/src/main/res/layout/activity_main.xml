@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout0"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="My Home"
+            android:textColor="@android:color/background_light"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            app:srcCompat="@drawable/homeicon" />
+
+        <TextView
+            android:id="@+id/Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Username"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            tools:text="Entrer votre Code" />
+
+        <EditText
+            android:id="@+id/Password1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/buconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="Valider"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/gaz"
+            android:gravity="center"
+            android:text="Gaz" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/thermometre"
+            android:gravity="center"
+            android:text="Temperature" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/lumiere"
+            android:gravity="center"
+            android:text="Lumiére" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:gravity="center"
+            android:drawableLeft="@drawable/camera"
+            android:text="camera"
+
+
+
+
+            />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:gravity="center"
+            android:drawableLeft="@drawable/porte"
+            android:text="Porte" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/devices"
+            android:gravity="center"
+            android:text="Online Devices" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:fontFamily="serif"
+            android:text="Chambre 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_height="50dp" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:fontFamily="serif"
+            android:text="Chambre2"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:fontFamily="serif"
+            android:text="Chambre3"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imagetemperature"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            app:srcCompat="@drawable/temperature" />
+
+        <TextView
+            android:id="@+id/subtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/gaz1" />
+
+        <TextView
+            android:id="@+id/subtext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/subtext5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:srcCompat="@drawable/porte"/>
+
+
+
+        <Switch
+            android:id="@+id/switch6"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:text="Porte"
+            android:drawableLeft="@drawable/door"
+            android:fontFamily="serif"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+
+            />
+    </LinearLayout>
+</LinearLayout>
+
